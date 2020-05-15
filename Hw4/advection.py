@@ -8,7 +8,7 @@ def solution(x, t):
     return u0(x - C*t)
     
 C = 1.0                    #constant wave speed
-T = 4.0                    #a moment of time
+T = 2.0                    #a moment of time
 L, R = -5.0, 5.0           #left and right ends
 
 n = int(input("Enter n: "))
