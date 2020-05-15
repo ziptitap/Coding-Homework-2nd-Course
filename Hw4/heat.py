@@ -9,7 +9,7 @@ def solution(x, t):
     return 1.0 / np.sqrt(t+1) * exp((-x*x)/(4*(t+1)))
     
 mu = 1.0                #a real coefficient called the diffusivity of the medium
-T = 4.0                 #a moment of time
+T = 2.0                 #a moment of time
 L, R = -10.0, 10.0      #Left and right ends
 
 n = int(input("Enter n: "))
