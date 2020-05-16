@@ -58,14 +58,18 @@ After starting, a menu of 4 items will appear:
 
 Enter one of the items and the corresponding program starts.
 
-Output data       | Description                
-------------------|-----------------
-    n             | matrix dimension;
-    Error         | error (the infinity norm of the difference between my and numpy
-                  |  results ||x_my - x_numpy||); 
-    My time       | the time of my calculations for the matrix n*n;
-    Numpy time    | the computation time of the library function for the matrix n*n.
+  Output data   | Description
+  ------------- | -------------
+  n             | Matrix dimension.
+  Error         | Error (the infinity norm of the difference between my and numpy.
+  My time       | Time of my calculations for the matrix nxn.
+  Numpy time    | The computation time of the library function for the matrix nxn.
 
+
+
+Example of running the program `test.py`:
+
+ ![Equation](../pics/example.png)
 
 The dimension of the matrix increases until the time of my calculations exceeds 
 1 seconds. When the time exceeds 1 second, the calculations for the selected 
