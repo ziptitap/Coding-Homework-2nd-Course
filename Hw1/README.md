@@ -35,7 +35,7 @@ The Cholesky decomposition of a Hermitian positive-definite matrix **A** is a de
 
 The following formulas are obtained by solving above lower triangular matrix and its transpose. These are the basis of Cholesky Decomposition Algorithm :
 
-![Equation](https://github.com/ziptitap/Homework-CM/pics/eq1.png)
+![Equation](/Homework-CM/pics/eq1.png)
 
 ----------------
 
