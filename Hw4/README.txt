@@ -6,5 +6,5 @@ To run a heat equation:
             
 Each program requires the entry of values n and m.
             
-heat1.mp4     -  example of heat.py program.
-transfer.mp4  -  example of advection.py program.
+heat1.gif     -  example of heat.py program.
+transfer1.gif  -  example of advection.py program.
