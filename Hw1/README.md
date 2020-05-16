@@ -16,6 +16,7 @@ Compare the solution of SLE (system of linear equations) using
   1. the Gaussian method of library function np.linalg.solve,
   2. the Cholesky method of library function np.linalg.cholesky,
   3. the sweep method of library function scipy.linalg.solve_banded,
+
 with your own implementation on a random matrix with a diagonal prevalence of 100 x 100, 200 x 200, etc. size. 
   Carry out several experiments until the counting time is less than a second. Build dependency graphs. 
 
