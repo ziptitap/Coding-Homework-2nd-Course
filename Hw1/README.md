@@ -1,6 +1,18 @@
-## Homework 2 - 
-### How to run:
+## Homework 1
+
+### How To Run:
 ```python3 test.py```
+
+### Files Includes With This Project:
+  File          | Description
+  ------------- | -------------
+  gauss.py      | The program implements the gauss method.
+  cholesky.py   | The program implements the cholesky method.
+  sweep.py      | The program implements the sweep method.
+  test.py       | The program organizes the work of all programs.
+
+### Design Decisions & Project Issues:
+
 
 After starting, a menu of 4 items will appear:  
     1 - Gauss method
