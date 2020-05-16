@@ -1,6 +1,6 @@
 ## Homework 1
 
-### Formulation Of The Problem:
+### Formulation Of The Problem
 Compare the implementation of library function 
   1. np.linalg.solve for **the Gaussian elimination**,
   2. np.linalg.cholesky for **the Cholesky decomposition**,
