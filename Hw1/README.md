@@ -65,18 +65,18 @@ Enter one of the items and the corresponding program starts.
   My time       | Time of my calculations for the matrix nxn.
   Numpy time    | The computation time of the library function for the matrix nxn.
 
-
-
-Example of running the program `test.py`:
-
- ![Equation](../pics/example.png)
-
 The dimension of the matrix increases until the time of my calculations exceeds 
 1 seconds. When the time exceeds 1 second, the calculations for the selected 
 method stop and a graph is displayed. The graph shows the dependence of the time 
 of calculations on the size of the matrix.
 
 After closing the graph, the menu reappears.
+
+Example of running the program `test.py`:
+
+ ![](../pics/example.png 'Example of running the program')
+
+ ![](../pics/results/jacob_plot.png 'Jacob plot')
 
 ----------------
 
