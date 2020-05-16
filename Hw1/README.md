@@ -91,7 +91,7 @@ Example of running the program `test.py`:
 
  ![](../pics/example.png 'Example of running the program')
 
- ![](../pics/results/gauss_plot.jpg 'Gauss plot')
+ ![](../gauss_plot.jpg 'Gauss plot')
 
 ----------------
 
