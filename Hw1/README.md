@@ -27,7 +27,7 @@ Gaussian elimination has arithmetic complexity of *O(n3)*.
 
 ----------------
 
-#### Cholesky decomposition
+#### Cholesky Decomposition
 
 The Cholesky decomposition or Cholesky factorization is a decomposition of a Hermitian, positive-definite matrix into the product of a lower triangular matrix and its conjugate transpose. The Cholesky decomposition is roughly twice as efficient as the LU decomposition for solving systems of linear equations.
 
@@ -41,7 +41,7 @@ The computational complexity of commonly used algorithms is *O(n3)* in general.
 
 ----------------
 
-#### Sweep algorithm
+#### Sweep Algorithm
 In numerical linear algebra, the tridiagonal matrix algorithm, also known as the sweep algorithm, is a simplified form of Gaussian elimination that can be used to solve tridiagonal systems of equations. A tridiagonal system for *n* unknowns may be written as
 
 ![Equation](../pics/eq2.png)
@@ -50,7 +50,7 @@ For such systems, the solution can be obtained in *O(n)*.
 
 ----------------
 
-### Files Includes With This Project:
+### Files Includes With This Project
   File          | Description
   ------------- | -------------
   gauss.py      | The program implements the gauss method.
@@ -60,7 +60,7 @@ For such systems, the solution can be obtained in *O(n)*.
 
 ----------------
 
-### How To Run:
+### How To Run
 ```python3 test.py```
 
 ----------------
@@ -91,7 +91,7 @@ Example of running the program `test.py`:
 
  ![](../pics/example.png 'Example of running the program')
 
- ![](../pics/results/gauss_plot.png 'Gauss plot')
+ ![](../pics/results/gauss_plot.jpg 'Gauss plot')
 
 ----------------
 
