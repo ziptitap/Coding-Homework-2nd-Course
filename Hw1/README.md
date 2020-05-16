@@ -1,5 +1,6 @@
-Run:
-        python3 test.py
+##Homework 2 - 
+###How to run:
+```python3 test.py```
 
 After starting, a menu of 4 items will appear:  
     1 - Gauss method
