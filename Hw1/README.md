@@ -23,7 +23,7 @@ Forward Elimination: bring the matrix to an improved upper triangular form by el
 Back Substitution: to diagonalize matrix by elementary row transformations:
  **`x = U^{-1} L^{-1} f`** 
 
-Gaussian elimination has arithmetic complexity of O(n3)
+Gaussian elimination has arithmetic complexity of *O(n3)*.
 
 ----------------
 
@@ -36,6 +36,17 @@ The Cholesky decomposition of a Hermitian positive-definite matrix **A** is a de
 The following formulas are obtained by solving above lower triangular matrix and its transpose. These are the basis of Cholesky Decomposition Algorithm :
 
 ![Equation](../pics/eq1.png)
+
+The computational complexity of commonly used algorithms is *O(n3)* in general.
+
+----------------
+
+#### Sweep algorithm
+In numerical linear algebra, the tridiagonal matrix algorithm, also known as the sweep algorithm, is a simplified form of Gaussian elimination that can be used to solve tridiagonal systems of equations. A tridiagonal system for *n* unknowns may be written as
+
+![Equation](../pics/eq2.png)
+
+For such systems, the solution can be obtained in *O(n)*.
 
 ----------------
 
