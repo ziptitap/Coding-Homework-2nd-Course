@@ -13,9 +13,9 @@ with your own implementation of corresponding method for solving SLE (system of 
 #### Gaussian Elimination
 Gaussian elimination, also known as row reduction, is an algorithm in linear algebra for solving a system of linear equations.
 
-Problem: solve the SLE **Ax = f**.
+Problem: solve the SLE **`Ax = f`**.
 
-Let **A** be a square matrix. The idea refers to the factorization of **A**, with proper row and/or column orderings or permutations, into two factors – a lower triangular matrix **L** and an upper triangular matrix **U** (which has units on the main diagonal): **A = LU** &#8594; **LUx = f**.
+Let **A** be a square matrix. The idea refers to the factorization of **A**, with proper row and/or column orderings or permutations, into two factors – a lower triangular matrix **L** and an upper triangular matrix **U** (which has units on the main diagonal): **`A = LU`** &#8594; **`LUx = f`**.
 
 Forward Elimination: bring the matrix to an improved upper triangular form by elementary row operations:
 **`Ux = L_{-1} f`**
@@ -24,6 +24,18 @@ Back Substitution: to diagonalize matrix by elementary row transformations:
  **`x = U^{-1} L^{-1} f`** 
 
 Gaussian elimination has arithmetic complexity of O(n3)
+
+----------------
+
+#### Cholesky decomposition
+
+The Cholesky decomposition or Cholesky factorization is a decomposition of a Hermitian, positive-definite matrix into the product of a lower triangular matrix and its conjugate transpose. The Cholesky decomposition is roughly twice as efficient as the LU decomposition for solving systems of linear equations.
+
+The Cholesky decomposition of a Hermitian positive-definite matrix **A** is a decomposition of the form **`A = [L][L]^T`**, where **L** is a lower triangular matrix with real and positive diagonal entries, and **L^T** denotes the conjugate transpose of **L**. 
+
+The following formulas are obtained by solving above lower triangular matrix and its transpose. These are the basis of Cholesky Decomposition Algorithm :
+
+[[img src=./pics/eq1.png]]
 
 ----------------
 
