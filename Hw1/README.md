@@ -5,14 +5,16 @@ Compare the implementation of library function
   1. np.linalg.solve for **the Gaussian elimination**,
   2. np.linalg.cholesky for **the Cholesky decomposition**,
   3. scipy.linalg.solve_banded for **the sweep algorithm**,
+
 with your own implementation of corresponding method for solving SLE (system of linear equations) on a random matrix with a diagonal prevalence of 100 x 100, 200 x 200, etc. size. Carry out several experiments until the counting time is less than a second. Build dependency graphs. 
 
-#### Gauss Elimination
-*Gaussian elimination*, also known as row reduction, is an algorithm in linear algebra for solving a system of linear equations.
-
-*Problem*: solve the SLE **Ax = f**.
+#### Gaussian Elimination
+Gaussian elimination, also known as row reduction, is an algorithm in linear algebra for solving a system of linear equations.
+***
+Problem: solve the SLE **Ax = f**.
+***
 Let **A** be a square matrix. The idea refers to the factorization of **A**, with proper row and/or column orderings or permutations, into two factors – a lower triangular matrix **L** and an upper triangular matrix **U** (which has units on the main diagonal): **A = LU** &#8594; **LUx = f**.
-
+***
 it has arithmetic complexity of O(n3)
 
 ### Project Overview 
