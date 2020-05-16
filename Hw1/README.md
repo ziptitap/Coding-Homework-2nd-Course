@@ -1,7 +1,22 @@
 ## Homework 1
 
-### How To Run:
-```python3 test.py```
+### Formulation Of The Problem:
+Compare the implementation of library function 
+  1. np.linalg.solve for **the Gaussian elimination**,
+  2. np.linalg.cholesky for **the Cholesky decomposition**,
+  3. scipy.linalg.solve_banded for **the sweep algorithm**,
+with your own implementation of corresponding method for solving SLE (system of linear equations) on a random matrix with a diagonal prevalence of 100 x 100, 200 x 200, etc. size. Carry out several experiments until the counting time is less than a second. Build dependency graphs. 
+
+#### Gauss Elimination
+*Gaussian elimination*, also known as row reduction, is an algorithm in linear algebra for solving a system of linear equations.
+
+*Problem*: solve the SLE **Ax = f**.
+Let **A** be a square matrix. The idea refers to the factorization of **A**, with proper row and/or column orderings or permutations, into two factors – a lower triangular matrix **L** and an upper triangular matrix **U** (which has units on the main diagonal): **A = LU** &#8594; **LUx = f**.
+
+it has arithmetic complexity of O(n3)
+
+### Project Overview 
+
 
 ### Files Includes With This Project:
   File          | Description
@@ -11,14 +26,9 @@
   sweep.py      | The program implements the sweep method.
   test.py       | The program organizes the work of all programs.
 
-### Formulation of the problem:
-Compare the solution of SLE (system of linear equations) using 
-  1. the Gaussian method of library function np.linalg.solve,
-  2. the Cholesky method of library function np.linalg.cholesky,
-  3. the sweep method of library function scipy.linalg.solve_banded,
+### How To Run:
+```python3 test.py```
 
-with your own implementation on a random matrix with a diagonal prevalence of 100 x 100, 200 x 200, etc. size. 
-  Carry out several experiments until the counting time is less than a second. Build dependency graphs. 
 
 
 ### Design Decisions:
