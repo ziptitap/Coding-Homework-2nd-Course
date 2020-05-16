@@ -7,7 +7,9 @@ Compare the implementation of library function
   3. scipy.linalg.solve_banded for **the sweep algorithm**,
 
 with your own implementation of corresponding method for solving SLE (system of linear equations) on a random matrix with a diagonal prevalence of 100 x 100, 200 x 200, etc. size. Carry out several experiments until the counting time is less than a second. Build dependency graphs. 
-***
+
+----------------
+
 #### Gaussian Elimination
 Gaussian elimination, also known as row reduction, is an algorithm in linear algebra for solving a system of linear equations.
 
@@ -15,10 +17,19 @@ Problem: solve the SLE **Ax = f**.
 
 Let **A** be a square matrix. The idea refers to the factorization of **A**, with proper row and/or column orderings or permutations, into two factors – a lower triangular matrix **L** and an upper triangular matrix **U** (which has units on the main diagonal): **A = LU** &#8594; **LUx = f**.
 
-it has arithmetic complexity of O(n3)
+Forward Elimination: bring the matrix to an improved upper triangular form by elementary row operations:
+**`Ux = L_{-1} f`**
+
+Back Substitution: to diagonalize matrix by elementary row transformations:
+ **`x = U^{-1} L^{-1} f`** 
+
+Gaussian elimination has arithmetic complexity of O(n3)
+
+----------------
 
 ### Project Overview 
 
+----------------
 
 ### Files Includes With This Project:
   File          | Description
@@ -28,13 +39,16 @@ it has arithmetic complexity of O(n3)
   sweep.py      | The program implements the sweep method.
   test.py       | The program organizes the work of all programs.
 
+----------------
+
 ### How To Run:
 ```python3 test.py```
 
-
+----------------
 
 ### Design Decisions:
 
+----------------
 
 
 After starting, a menu of 4 items will appear:  
@@ -51,6 +65,8 @@ Output data:
                      results ||x_my - x_numpy||); 
     My time        - the time of my calculations for the matrix n*n;
     Numpy time     - the computation time of the library function for the matrix n*n.
+    
+----------------
 
 The dimension of the matrix increases until the time of my calculations exceeds 
 1 seconds. When the time exceeds 1 second, the calculations for the selected 
