@@ -50,6 +50,21 @@ For such systems, the solution can be obtained in *O(n)*.
 
 ----------------
 
+### Files Includes With This Project:
+  File          | Description
+  ------------- | -------------
+  gauss.py      | The program implements the gauss method.
+  cholesky.py   | The program implements the cholesky method.
+  sweep.py      | The program implements the sweep method.
+  test.py       | The program organizes the work of all programs.
+
+----------------
+
+### How To Run:
+```python3 test.py```
+
+----------------
+
 ### Project Overview 
 
 After starting, a menu of 4 items will appear:  
@@ -76,24 +91,8 @@ Example of running the program `test.py`:
 
  ![](../pics/example.png 'Example of running the program')
 
- ![](../pics/results/jacob_plot.png 'Jacob plot')
+ ![](../pics/results/gauss_plot.png 'Gauss plot')
 
 ----------------
-
-### Files Includes With This Project:
-  File          | Description
-  ------------- | -------------
-  gauss.py      | The program implements the gauss method.
-  cholesky.py   | The program implements the cholesky method.
-  sweep.py      | The program implements the sweep method.
-  test.py       | The program organizes the work of all programs.
-
-----------------
-
-### How To Run:
-```python3 test.py```
-
-----------------
-
 
 
