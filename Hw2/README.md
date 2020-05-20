@@ -1,14 +1,34 @@
 ## Homework 2
 
 ### Formulation Of The Problem
+
 Compare the implementation of library function *np.linalg.solve* for **the Jacobi method** and **the Seidel method** with your own implementation of corresponding methods for solving SLE (system of linear equations) on a random matrix with a diagonal prevalence of size 100 x 100, 200 x 200, etc. Carry out several experiments until the counting time is less than a second. Build dependency graphs. 
 
 ----------------
 
 #### Jacobi method
 
+Jacobi iterative method is considered as an iterative algorithm which is used for determining the solutions for the system of linear equations in numerical linear algebra, which is diagonally dominant. In this method, an approximate value is filled in for each diagonal element. Until it converges, the process is iterated. This algorithm was first called the Jacobi transformation process of matrix diagonalization.
 
+Let the n system of linear equations be **`Ax = b`**. Then **A** can be decomposed into a diagonal component **D**, a lower triangular part **L** and an upper triangular part **U**:
 
+![Equation](../pics/eq6.png)
+
+Then **A** can be decomposed into a diagonal component **D**, a lower triangular part **L** and an upper triangular part **U**:
+
+![Equation](../pics/eq7.png)
+
+The solution is then obtained iteratively via:
+
+![Equation](../pics/eq8.png)
+
+where *x^k* is the k-th approximation or iteration of *x*  and *x^(k+1)* is the next or *(k + 1)* iteration of x. The element-based formula is thus:
+
+![Equation](../pics/eq9.png)
+
+The computation *x_{i}^(k+1)* requires each element in *x^(k)* except itself. 
+
+The Jacobi method has computation complexity of *O(n2)*.
 
 ----------------
 
@@ -18,34 +38,28 @@ The Gauss–Seidel method is an iterative technique for solving a square system 
 It is nearly similar to Jacobi method, except that each *x*-value is improved using the most recent approximations to the values of the other variables.
 
 It is defined by the iteration: 
+
 ![Equation](../pics/eq3.jpg)
+
 where *x^k* is the k-th approximation or iteration of *x*, *x^(k+1)* is the next or *(k+1)* iteration of x, and the matrix **A** is decomposed into a lower triangular component **L** and a strictly upper triangular component **U**: **`A=L+U`**.
 
 The Gauss–Seidel method now solves the left hand side of this expression for *x*, using previous value for *x* on the right hand side. Analytically, this may be written as:
+
 ![Equation](../pics/eq4.jpg)
 
 However, by taking advantage of the triangular form of **L_{*}**, the elements of *x^(k+1)* can be computed sequentially using forward substitution:
+
 ![Equation](../pics/eq5.png)
 
 The Gauss–Seidel method has computation complexity of *O(n2)*.
 
 ----------------
 
-#### Sweep Algorithm
-In numerical linear algebra, the tridiagonal matrix algorithm, also known as the sweep algorithm, is a simplified form of Gaussian elimination that can be used to solve tridiagonal systems of equations. A tridiagonal system for *n* unknowns may be written as
-
-![Equation](../pics/eq2.png)
-
-For such systems, the solution can be obtained in *O(n)*.
-
-----------------
-
 ### Files Includes With This Project
   File          | Description
   ------------- | -------------
-  gauss.py      | The program implements the gauss method.
-  cholesky.py   | The program implements the cholesky method.
-  sweep.py      | The program implements the sweep method.
+  jacob.py      | The program implements the Jacobi method.
+  seidel.py     | The program implements the Gauss-Seidel method.
   test.py       | The program organizes the work of all programs.
 
 ----------------
@@ -57,11 +71,8 @@ For such systems, the solution can be obtained in *O(n)*.
 
 ### Project Overview 
 
-After starting, a menu of 4 items will appear:  
-              ![Equation](../pics/choose.png)
-
-
-Enter one of the items and the corresponding program starts.
+The program runs in turn the methods Jacobi and Seidel. 
+During the execution there are output data:
 
   Output data   | Description
   ------------- | -------------
@@ -70,46 +81,14 @@ Enter one of the items and the corresponding program starts.
   My time       | Time of my calculations for the matrix nxn.
   Numpy time    | The computation time of the library function for the matrix nxn.
 
-The dimension of the matrix increases until the time of my calculations exceeds 
-1 seconds. When the time exceeds 1 second, the calculations for the selected 
-method stop and a graph is displayed. The graph shows the dependence of the time 
-of calculations on the size of the matrix.
-
-After closing the graph, the menu reappears.
+The dimension of the matrix increases until the time of my calculations exceeds 1 seconds. When the time exceeds 1 second, the calculations for the selected method stop and a graph is displayed. The graph shows the dependence of the time of calculations on the size of the matrix.
 
 Example of running the program `test.py`:
 
- ![](../pics/example.png 'Example of running the program')
+ ![](../pics/ex2.png 'Example of running the program')
 
 Plot:
 
- ![](gauss_plot.jpg 'Gauss plot')
+ ![](fig.jpg 'Gauss plot')
 
 ----------------
-
-
-
-
-Run:
-        python3 test.py
-
-After starting, a menu of 3 items will appear: 
-    1 - Jacob method
-    2 - Seidel method
-    q - quit
-
-Enter one of the items and the corresponding program starts.
-
-Output data:
-    n              - matrix dimension;
-    Error          - error (the infinity norm of the difference between my and numpy 
-                     results ||x_my - x_numpy||); 
-    My time        - the time of my calculations for the matrix n*n;
-    Numpy time     - the computation time of the library function for the matrix n*n.
-
-The dimension of the matrix increases until the time of my calculations exceeds 
-0.1 seconds. When the time exceeds 0.1 second, the calculations for the selected 
-method stop and a graph is displayed. The graph shows the dependence of the time 
-of calculations on the size of the matrix.
-
-After closing the graph, the menu reappears.
