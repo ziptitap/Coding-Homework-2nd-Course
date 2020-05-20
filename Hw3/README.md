@@ -107,4 +107,4 @@ Output data:
 At the end, 4 graphs are displayed: one for the starting points (x, y), the others
 for points obtained as a result of the operation of each interpolation model.
 
-![Equation](/result.jpg)
+![Equation](./result.jpg)
