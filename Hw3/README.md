@@ -50,7 +50,7 @@ of Lagrange basis polynomials
 
 ![Equation](../pics/eq14.png)
 
-where *0 &#8804; j &#8804; k*. Note how, given the initial assumption that no two *`x_{j}`* are the same, then (when *m &#8800; j*) *x_{j} - x_{m} &#8800; 0*, so this expression is always well-defined. The reason pairs *`x_{i} = x_{j}`* with *y_{i} &#8800; y_{j}* are not allowed is that no interpolation function *`L`* such that *`y_{i} = L(x_{i})`* would exist; a function can only get one value for each argument *`x_{i}`*. On the other hand, if also *`y_{i} = y_{j}`*, then those two points would actually be one single point.
+where *0 &#8804; j &#8804; k*. Note how, given the initial assumption that no two *`x_{j}`* are the same, then (when *m &#8800; j*) *`x_{j} - x_{m}` &#8800; 0*, so this expression is always well-defined. The reason pairs *`x_{i} = x_{j}`* with *`y_{i}` &#8800; `y_{j}`* are not allowed is that no interpolation function *`L`* such that *`y_{i} = L(x_{i})`* would exist; a function can only get one value for each argument *`x_{i}`*. On the other hand, if also *`y_{i} = y_{j}`*, then those two points would actually be one single point.
 
 For all *i &#8800; j*, *`l_{j}(x)`* includes the term *`(x - x_{i})`* in the numerator, so the whole product will be zero at *`x = x_{i}`*:
 
@@ -67,12 +67,20 @@ It follows that *`l_{j}(x_{j}) = y_{j}`*, so at each point *`x_{j}`*, *`L(x_{j})
 ----------------
 
 ### Files Includes With This Project
-  File          | Description
-  ------------- | -------------
-  jacob.py      | The program implements the Jacobi method.
-  seidel.py     | The program implements the Gauss-Seidel method.
-  test.py       | The program organizes the work of all programs.
-
+  File              | Description
+  -------------     | -------------
+  linear.py         | The program implements the Jacobi method.
+  lagrange.py       | The program implements the Gauss-Seidel method.
+  spline.py         | The program organizes the work of all programs.
+  test.py           | The program implements the Jacobi method.
+  train.dat         | The program implements the Gauss-Seidel method.
+  strain.ans        | The program organizes the work of all programs.
+  test.dat          | The program implements the Jacobi method.
+  test_spline.ans   | The program implements the Gauss-Seidel method.
+  test_linear.ans   | The program organizes the work of all programs.
+  test_lagrange.ans | The program organizes the work of all programs.
+  result.jpg        | The program organizes the work of all programs.
+  
 ----------------
 
 ### How To Run
@@ -81,42 +89,17 @@ It follows that *`l_{j}(x_{j}) = y_{j}`*, so at each point *`x_{j}`*, *`L(x_{j})
 ----------------
 
 ### Project Overview 
-
-The program runs in turn the methods Jacobi and Seidel. 
-During the execution there are output data:
-
-  Output data   | Description
-  ------------- | -------------
-  n             | Matrix dimension.
-  Error         | Error (the infinity norm of the difference between my and numpy.
-  My time       | Time of my calculations for the matrix nxn.
-  Numpy time    | The computation time of the library function for the matrix nxn.
-
-The dimension of the matrix increases until the time of my calculations exceeds 1 seconds. When the time exceeds 1 second, the calculations for the selected method stop and a graph is displayed. The graph shows the dependence of the time of calculations on the size of the matrix.
-
-Example of running the program `test.py`:
-
- ![](../pics/ex2.png 'Example of running the program')
-
-Plot:
-
- ![](result.jpg 'Gauss plot')
-
-----------------
-
-
-
-Run:
-        python3 interpol.py
         
 In this program, calculations are made immediately for three interpolation models.
  
 Input data:
+
         train.dat  - x values
         train.ans  - y values
         test.dat   - points at which the function values should be restored.
         
 Output data:
+
         test_linear.ans     - linear interpolation calculation results (for test.dat points)
         test_lagrange.ans   - lagrange interpolation calculation results (for test.dat points)
         test_spline.ans     - spline interpolation calculation results (for test.dat points)
