@@ -22,7 +22,7 @@ The solution is then obtained iteratively via:
 
 ![Equation](../pics/eq8.png)
 
-where *x^k* is the k-th approximation or iteration of *x*  and *x^(k+1)* is the next or *(k + 1)* iteration of x. The element-based formula is thus:
+where *x^(k)* is the k-th approximation or iteration of *x*  and *x^(k+1)* is the next or *(k + 1)* iteration of x. The element-based formula is thus:
 
 ![Equation](../pics/eq9.png)
 
@@ -41,13 +41,13 @@ It is defined by the iteration:
 
 ![Equation](../pics/eq3.jpg)
 
-where *x^k* is the k-th approximation or iteration of *x*, *x^(k+1)* is the next or *(k+1)* iteration of x, and the matrix **A** is decomposed into a lower triangular component **L** and a strictly upper triangular component **U**: **`A=L+U`**.
+where *x^(k)* is the k-th approximation or iteration of *x*, *x^(k+1)* is the next or *(k+1)* iteration of x, and the matrix **A** is decomposed into a lower triangular component **L** and a strictly upper triangular component **U**: **`A=L+U`**.
 
 The Gauss–Seidel method now solves the left hand side of this expression for *x*, using previous value for *x* on the right hand side. Analytically, this may be written as:
 
 ![Equation](../pics/eq4.jpg)
 
-However, by taking advantage of the triangular form of **L_{*}**, the elements of *x^(k+1)* can be computed sequentially using forward substitution:
+However, by taking advantage of the triangular form of **L**, the elements of *x^(k+1)* can be computed sequentially using forward substitution:
 
 ![Equation](../pics/eq5.png)
 
