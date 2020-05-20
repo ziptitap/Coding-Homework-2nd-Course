@@ -48,17 +48,17 @@ Given a set of *`(k + 1)`* data points *`(x_{0},y_{0}), ...,(x_{j},y_{j}), ...,(
 
 of Lagrange basis polynomials
 
-![Equation](../pics/eq14.jpg)
+![Equation](../pics/eq14.png)
 
-where *0 &#8804; j &#8804; k*. Note how, given the initial assumption that no two *`x_{j}`* are the same, then (when *m &#8800; j*) *`x_{j} - x_{m} &#8800; 0*`, so this expression is always well-defined. The reason pairs *`x_{i} = x_{j}`* with *`y_{i} &#8800; y_{j}`* are not allowed is that no interpolation function *`L`* such that *`y_{i} = L(x_{i})`* would exist; a function can only get one value for each argument *`x_{i}`*. On the other hand, if also *`y_{i} = y_{j}`*, then those two points would actually be one single point.
+where *0 &#8804; j &#8804; k*. Note how, given the initial assumption that no two *`x_{j}`* are the same, then (when *m &#8800; j*) *x_{j} - x_{m} &#8800; 0*, so this expression is always well-defined. The reason pairs *`x_{i} = x_{j}`* with *y_{i} &#8800; y_{j}* are not allowed is that no interpolation function *`L`* such that *`y_{i} = L(x_{i})`* would exist; a function can only get one value for each argument *`x_{i}`*. On the other hand, if also *`y_{i} = y_{j}`*, then those two points would actually be one single point.
 
-For all *`i &#8800; j`*, *`l_{j}(x)`* includes the term *`(x - x_{i})`* in the numerator, so the whole product will be zero at *`x = x_{i}`*:
+For all *i &#8800; j*, *`l_{j}(x)`* includes the term *`(x - x_{i})`* in the numerator, so the whole product will be zero at *`x = x_{i}`*:
 
-![Equation](../pics/eq15.jpg)
+![Equation](../pics/eq15.png)
 
 On the other hand,
 
-![Equation](../pics/eq5.png)
+![Equation](../pics/eq16.png)
 
 In other words, all basis polynomials are zero at *`x = x_{i}`*, except *`l_{j}(x)`*, for which it holds that *`l_{j}(x_{j}) = 1`*, because it lacks the *`(x - x_{j})`* term.
 
