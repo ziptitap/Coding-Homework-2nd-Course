@@ -6,7 +6,7 @@ Compare the implementation of library function *np.linalg.solve* for **the Jacob
 
 ----------------
 
-#### Jacobi method
+#### Jacobi Method
 
 Jacobi iterative method is considered as an iterative algorithm which is used for determining the solutions for the system of linear equations in numerical linear algebra, which is diagonally dominant. In this method, an approximate value is filled in for each diagonal element. Until it converges, the process is iterated. 
 
@@ -32,7 +32,7 @@ The Jacobi method has computation complexity of *O(n2)*.
 
 ----------------
 
-#### Gauss–Seidel method 
+#### Gauss–Seidel Method 
 
 The Gauss–Seidel method is an iterative technique for solving a square system of n linear equations with unknown x: **`Ax = f`** .
 It is nearly similar to Jacobi method, except that each *x*-value is improved using the most recent approximations to the values of the other variables.
