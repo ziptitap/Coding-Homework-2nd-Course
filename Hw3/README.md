@@ -3,11 +3,13 @@
 ### Formulation Of The Problem
 
 Given 3 text files with numbers written in columns:
+
         1. train.dat - values *x0 < x1 <...< x_n*;
         2. train.ans - values *y0 < y1 <...< y_n*;
         3. test.dat - values *z0 < z1<...<zm*.
 
 Required to build 3 different interpolation models *y_{i} = f(x_{i})* on *(x_{i}, y_{i})*:
+
         1. Linear interpolationn;
         2. Lagrange interpolation;
         3. Spline interpolation. 
