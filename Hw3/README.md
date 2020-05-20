@@ -69,17 +69,17 @@ It follows that *`l_{j}(x_{j}) = y_{j}`*, so at each point *`x_{j}`*, *`L(x_{j})
 ### Files Includes With This Project
   File              | Description
   -------------     | -------------
-  linear.py         | The program implements the Jacobi method.
-  lagrange.py       | The program implements the Gauss-Seidel method.
-  spline.py         | The program organizes the work of all programs.
-  test.py           | The program implements the Jacobi method.
-  train.dat         | The program implements the Gauss-Seidel method.
-  strain.ans        | The program organizes the work of all programs.
-  test.dat          | The program implements the Jacobi method.
-  test_spline.ans   | The program implements the Gauss-Seidel method.
-  test_linear.ans   | The program organizes the work of all programs.
-  test_lagrange.ans | The program organizes the work of all programs.
-  result.jpg        | The program organizes the work of all programs.
+  linear.py         | The program implements the linear interpolation.
+  lagrange.py       | The program implements the lagrange interpolation.
+  spline.py         | The program organizes the spline interpolation.
+  test.py           | The program organizes the work of all programs.
+  train.dat         | Input data for *x* values.
+  train.ans         | Input data for *y* values.
+  test.dat          | Input data for *z* values.
+  test_spline.ans   | The result of spline interpolation for the set of values *z*.
+  test_linear.ans   | The result of linear interpolation for the set of values *z*.
+  test_lagrange.ans | The result of lagrange interpolation for the set of values *z*.
+  result.jpg        | The plot with input points and output poits of each interpolation method.
   
 ----------------
 
@@ -106,3 +106,5 @@ Output data:
 
 At the end, 4 graphs are displayed: one for the starting points (x, y), the others
 for points obtained as a result of the operation of each interpolation model.
+
+![Equation](../result.png)
