@@ -10,11 +10,11 @@ Compare the implementation of library function *np.linalg.solve* for **the Jacob
 
 Jacobi iterative method is considered as an iterative algorithm which is used for determining the solutions for the system of linear equations in numerical linear algebra, which is diagonally dominant. In this method, an approximate value is filled in for each diagonal element. Until it converges, the process is iterated. 
 
-Let the n system of linear equations be **`Ax = b`**. Then **A** can be decomposed into a diagonal component **D**, a lower triangular part **L** and an upper triangular part **U**:
+Let the n system of linear equations be **`Ax = b`**. Then **`A`** can be decomposed into a diagonal component **`D`**, a lower triangular part **`L`** and an upper triangular part **`U`**:
 
 ![Equation](../pics/eq6.png)
 
-Then **A** can be decomposed into a diagonal component **D**, a lower triangular part **L** and an upper triangular part **U**:
+Then **`A`** can be decomposed into a diagonal component **`D`**, a lower triangular part **`L`** and an upper triangular part **`U`**:
 
 ![Equation](../pics/eq7.png)
 
@@ -22,11 +22,11 @@ The solution is then obtained iteratively via:
 
 ![Equation](../pics/eq8.png)
 
-where *x^(k)* is the k-th approximation or iteration of *x*  and *x^(k+1)* is the next or *(k + 1)* iteration of x. The element-based formula is thus:
+where *`x^{k}`* is the *k*-th approximation or iteration of *`x`*  and *`x^{(k+1)}`* is the next or *`(k + 1)`* iteration of *`x`*. The element-based formula is thus:
 
 ![Equation](../pics/eq9.png)
 
-The computation *x_{i}^(k+1)* requires each element in *x^(k)* except itself. 
+The computation *`x_{i}^{(k+1)}`* requires each element in *`x^{k}`* except itself. 
 
 The Jacobi method has computation complexity of *O(n2)*.
 
@@ -41,13 +41,13 @@ It is defined by the iteration:
 
 ![Equation](../pics/eq3.jpg)
 
-where *x^(k)* is the k-th approximation or iteration of *x*, *x^(k+1)* is the next or *(k+1)* iteration of x, and the matrix **A** is decomposed into a lower triangular component **L** and a strictly upper triangular component **U**: **`A=L+U`**.
+where *`x^{k}`* is the k-th approximation or iteration of *`x`*, *`x^{(k+1)}`* is the next or *`(k+1)`* iteration of *`x`*, and the matrix **`A`** is decomposed into a lower triangular component **`L`** and a strictly upper triangular component **`U`**: **`A=L+U`**.
 
-The Gauss–Seidel method now solves the left hand side of this expression for *x*, using previous value for *x* on the right hand side. Analytically, this may be written as:
+The Gauss–Seidel method now solves the left hand side of this expression for *`x`*, using previous value for *`x`* on the right hand side. Analytically, this may be written as:
 
 ![Equation](../pics/eq4.jpg)
 
-However, by taking advantage of the triangular form of **L**, the elements of *x^(k+1)* can be computed sequentially using forward substitution:
+However, by taking advantage of the triangular form of **`L`**, the elements of *`x^{(k+1)}`* can be computed sequentially using forward substitution:
 
 ![Equation](../pics/eq5.png)
 
