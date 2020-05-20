@@ -31,7 +31,7 @@ Gaussian elimination has arithmetic complexity of *O(n3)*.
 
 The Cholesky decomposition or Cholesky factorization is a decomposition of a Hermitian, positive-definite matrix into the product of a lower triangular matrix and its conjugate transpose. The Cholesky decomposition is roughly twice as efficient as the LU decomposition for solving systems of linear equations.
 
-The Cholesky decomposition of a Hermitian positive-definite matrix **`A`** is a decomposition of the form **`A = [L][L]^T`**, where **`L`** is a lower triangular matrix with real and positive diagonal entries, and **`L^{T}`** denotes the conjugate transpose of **`L`**. 
+The Cholesky decomposition of a Hermitian positive-definite matrix **`A`** is a decomposition of the form **`A = LL^{T}`**, where **`L`** is a lower triangular matrix with real and positive diagonal entries, and **`L^{T}`** denotes the conjugate transpose of **`L`**. 
 
 The following formulas are obtained by solving above lower triangular matrix and its transpose. These are the basis of Cholesky Decomposition Algorithm :
 
