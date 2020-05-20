@@ -10,30 +10,16 @@ Compare the implementation of library function *np.linalg.solve* for **the Jacob
 
 
 
-
-
-
-Problem: solve the SLE **`Ax = f`**.
-
-Let **A** be a square matrix. The idea refers to the factorization of **A**, with proper row and/or column orderings or permutations, into two factors – a lower triangular matrix **L** and an upper triangular matrix **U** (which has units on the main diagonal): **`A = LU`** &#8594; **`LUx = f`**.
-
-Forward Elimination: bring the matrix to an improved upper triangular form by elementary row operations:
-**`Ux = L_{-1} f`**
-
-Back Substitution: to diagonalize matrix by elementary row transformations:
- **`x = U^{-1} L^{-1} f`** 
-
-Gaussian elimination has arithmetic complexity of *O(n3)*.
-
 ----------------
 
 #### Gauss–Seidel method 
 
 The Gauss–Seidel method is an iterative technique for solving a square system of n linear equations with unknown x: **`Ax = f`** .
+It is nearly similar to Jacobi method, except that each *x*-value is improved using the most recent approximations to the values of the other variables.
 
 It is defined by the iteration: 
 ![Equation](../pics/eq3.png)
-where *x^k* is the k-th approximation or iteration of *x*, *x^(k+1)* is the next or *(k+1)* iteration of x, and the matrix **A** is decomposed into a lower triangular component **L^{*}** and a strictly upper triangular component **U**: **`A=L_{*}+U`**.
+where *x^k* is the k-th approximation or iteration of *x*, *x^(k+1)* is the next or *(k+1)* iteration of x, and the matrix **A** is decomposed into a lower triangular component **L** and a strictly upper triangular component **U**: **`A=L+U`**.
 
 The Gauss–Seidel method now solves the left hand side of this expression for *x*, using previous value for *x* on the right hand side. Analytically, this may be written as:
 ![Equation](../pics/eq4.png)
