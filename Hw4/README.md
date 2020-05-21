@@ -8,16 +8,17 @@
 
 where *C = 1*,    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ![Equation](../pics/eq18.png)
 
-Analytical solution:     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Equation](../pics/eq19.png).
+Analytical solution:     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Equation](../pics/eq19.png).
 
 
   2. Implement the heat equation:
 
-![Equation](../pics/eq21.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Equation](../pics/eq21.png)
 
-where   ![Equation](../pics/eq23.png)
+where  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Equation](../pics/eq23.png)
 
-Analytical solution:        ![Equation](../pics/eq24.png)
+Analytical solution:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     ![Equation](../pics/eq24.png)
 
 
 Output a GIF image of the obtained solution for each equation.
