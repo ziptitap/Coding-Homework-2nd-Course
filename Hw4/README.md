@@ -4,13 +4,11 @@
 
   1. Implement the transport equation:
 
-          ![Equation](../pics/eq17.png)
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ![Equation](../pics/eq17.png)
 
-where *C = 1*,  ![Equation](../pics/eq18.png)
+where *C = 1*,    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ![Equation](../pics/eq18.png)
 
-Analytical solution:
-
-![Equation](../pics/eq19.png).
+Analytical solution:     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Equation](../pics/eq19.png).
 
 
   2. Implement the heat equation:
@@ -19,9 +17,7 @@ Analytical solution:
 
 where   ![Equation](../pics/eq23.png)
 
-Analytical solution: 
-
-![Equation](../pics/eq24.png)
+Analytical solution:        ![Equation](../pics/eq24.png)
 
 
 Output a GIF image of the obtained solution for each equation.
