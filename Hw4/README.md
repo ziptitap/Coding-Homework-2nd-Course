@@ -2,26 +2,27 @@
 
 ### Formulation Of The Problem
 
-1. Implement the transport equation:
+  1. Implement the transport equation:
 
-![Equation](../pics/eq17.png)
+          ![Equation](../pics/eq17.png)
 
-where *C = 1*,
-
-![Equation](../pics/eq18.png)
+where *C = 1*,  ![Equation](../pics/eq18.png)
 
 Analytical solution:
 
 ![Equation](../pics/eq19.png).
 
 
-2. Implement the heat equation:
+  2. Implement the heat equation:
 
 ![Equation](../pics/eq21.png)
 
-where ![Equation](../pics/eq23.png).
+where   ![Equation](../pics/eq23.png)
 
-Analytical solution: ![Equation](../pics/eq24.png)
+Analytical solution: 
+
+![Equation](../pics/eq24.png)
+
 
 Output a GIF image of the obtained solution for each equation.
 
