@@ -42,7 +42,7 @@ Solution:
 #### Heat Equation 
 In physics and mathematics, the heat equation is a partial differential equation that describes how the distribution of some quantity (such as heat) evolves over time in a solid medium, as it spontaneously flows from places where it is higher towards places where it is lower. It is a special case of the diffusion equation.
 
-Given the initial profile function *`u_{0}(x)`* and the transfer rate &mu. Find the profile at a random point in time *`T`*.
+Given the initial profile function *`u_{0}(x)`* and the transfer rate &mu;. Find the profile at a random point in time *`T`*.
 
 ![Equation](../pics/eq27.png)
 
