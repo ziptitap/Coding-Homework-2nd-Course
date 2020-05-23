@@ -41,12 +41,13 @@ import matplotlib.animation as animation
 def animate(k):
     plt.clf()                               #clear figure
     plt.ylim(0,1)                           #y axis limits 
-    plt.title("time " + str(tau*k) + "   (" +str(n)+"x"+str(m)+")")         
+    tt = str({tau*k:0.3})
+    plt.title("time " + tt + "   (" +str(n)+"x"+str(m)+")")         
     plt.plot(x, y[k], label = "Numerical")      #points of numerical solution                       
     plt.plot(x, u[k], label = "Analytical")     #points of analytical solution
     plt.legend()
     
 ani = animation.FuncAnimation(plt.figure(0), animate, frames=y.shape[0], interval=100)
-ani.save('transfer.mp4')
+ani.save('transfer.gif', writer='imagemagick', fps=30)
 plt.show()
     

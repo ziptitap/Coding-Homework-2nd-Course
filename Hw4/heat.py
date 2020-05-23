@@ -48,5 +48,5 @@ def animate(k):
     plt.legend()
     
 ani = animation.FuncAnimation(plt.figure(0), animate, frames=y.shape[0], interval=100)
-ani.save('heat.mp4')
+ani.save('heat.gif', writer='imagemagick', fps=30)
 plt.show() 
