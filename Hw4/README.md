@@ -6,7 +6,7 @@
 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ![Equation](../pics/eq17.png)
 
-where *C = 1*,    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ![Equation](../pics/eq18.png)
+where *C = 1*, ![Equation](../pics/eq18.png)
 
 Analytical solution:     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Equation](../pics/eq19.png).
