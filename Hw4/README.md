@@ -1,4 +1,4 @@
-## Homework 3
+## Homework 4
 
 ### Formulation Of The Problem
 
@@ -25,7 +25,7 @@ Output a GIF image of the obtained solution for each equation.
 
 ----------------
 
-#### Linear Interpolation
+#### Transport Equation
 
 ![Equation](../pics/eq10.png)
 
@@ -35,7 +35,7 @@ Output a GIF image of the obtained solution for each equation.
 
 ----------------
 
-#### Lagrange Interpolating Polynomial 
+#### Heat Equation 
 
 
 ![Equation](../pics/eq13.png)
@@ -52,56 +52,39 @@ of Lagrange basis polynomials
 ### Files Includes With This Project
   File              | Description
   -------------     | -------------
-  linear.py         | The program implements the linear interpolation.
-  lagrange.py       | The program implements the lagrange interpolation.
-  spline.py         | The program organizes the spline interpolation.
-  test.py           | The program organizes the work of all programs.
-  train.dat         | Input data for *x* values.
-  train.ans         | Input data for *y* values.
-  test.dat          | Input data for *z* values.
-  test_spline.ans   | The result of spline interpolation for the set of values *z*.
-  test_linear.ans   | The result of linear interpolation for the set of values *z*.
-  test_lagrange.ans | The result of lagrange interpolation for the set of values *z*.
-  result.jpg        | The plot with input points and output poits of each interpolation method.
+  heat.py           | The program implements the heat equation.
+  transport.py      | The program implements the transport equation.
+  heat1.gif         | The GIF-file to show the implementation of heat equation.
+  transfer.gif      | The GIF-file to show the implementation of transport equation.
   
 ----------------
 
 ### How To Run
+The heat equation:
+```python3 test.py```
+
+The transport equation:
 ```python3 test.py```
 
 ----------------
 
 ### Project Overview 
         
-In this program, calculations are made immediately for three interpolation models.
+The programs works separately. 
  
 Input data:
 
-        train.dat  - x values
-        train.ans  - y values
-        test.dat   - points at which the function values should be restored.
+        n  -  amount of steps for x axis;
+        m  -  amount of steps for t axis;
+        
         
 Output data:
 
-        test_linear.ans     - linear interpolation calculation results (for test.dat points)
-        test_lagrange.ans   - lagrange interpolation calculation results (for test.dat points)
-        test_spline.ans     - spline interpolation calculation results (for test.dat points)
+  * GIF-file for transport equation:
+  
+    ![Equation](./transfer1.gif)
+    
+  * GIF-file for heat equation:
+  
+    ![Equation](./heat1.gif)
 
-At the end, 4 graphs are displayed: one for the starting points (x, y), the others
-for points obtained as a result of the operation of each interpolation model.
-
-![Equation](./result.jpg)
-
-
-
-
-To run an advection equation:
-            python3 advection.py
- 
-To run a heat equation:
-            python3 advection.py           
-            
-Each program requires the entry of values n and m.
-            
-heat1.gif     -  example of heat.py program.
-transfer1.gif  -  example of advection.py program.
