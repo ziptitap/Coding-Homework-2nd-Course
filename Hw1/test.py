@@ -101,11 +101,23 @@ while ch!='q':
         ch = choose()
         continue
     x = [y for y in range(n0,n+1,h)]
-    plt.plot(x,time1, label="My time")
-    plt.plot(x,time2,label="Numpy time")
-    plt.xlabel("n")
-    plt.ylabel("time (sec)")
-    plt.legend(bbox_to_anchor=(0.5, 0., 0.5, 0.5), loc=0, borderaxespad=0.)
+    
+    ax1 = plt.subplot(211)
+    ax2 = plt.subplot(212)
+
+    ax1.plot(x,time1, label="My time")
+    ax1.plot(x,time2,label="Numpy time", c='r')
+    ax1.legend(bbox_to_anchor=(0.5, 0., 0.5, 0.5), loc=0, borderaxespad=0.)
+    ax1.set_xlabel("n")
+    ax1.set_ylabel("time (sec)")
+    
+    ax2.plot(x,time2,label="Numpy time", c ='r')
+    ax2.legend(bbox_to_anchor=(0.5, 0., 0.5, 0.5), loc=0, borderaxespad=0.)
+    ax2.set_xlabel("n")
+    ax2.set_ylabel("time (sec)")
+    
+    plt.subplots_adjust(wspace=0.45, hspace=0.45)
+    plt.savefig("graph.jpg")
     plt.show()
     print("\n###############################################\n")
     ch = choose()
