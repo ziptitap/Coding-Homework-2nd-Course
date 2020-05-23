@@ -41,8 +41,7 @@ import matplotlib.animation as animation
 def animate(k):
     plt.clf()                               #clear figure
     plt.ylim(0,1)                           #y axis limits 
-    tt = str({tau*k:0.3})
-    plt.title("time " + tt + "   (" +str(n)+"x"+str(m)+")")         
+    plt.title("time = %0.1f  (% d, % d)" %(tau*k, n,m))         
     plt.plot(x, y[k], label = "Numerical")      #points of numerical solution                       
     plt.plot(x, u[k], label = "Analytical")     #points of analytical solution
     plt.legend()
