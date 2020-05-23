@@ -20,9 +20,10 @@ def write_file(name, v):
         fans.write('\n')
 
 # plotting    
-def pltplt(ax, title, x_data, y_data, xlabel, ylabel, color, edge_c):
+def pltplt(ax, title, x_data, y_data, xlabel, ylabel, color,size):
     ax.set_title(title)
-    ax.scatter(x_data,y_data,marker='o', c=color, edgecolor=edge_c)
+    ax.scatter(x_data,y_data,marker='o', c=color, s=size)
+    ax1.scatter(x_data,y_data,marker='o', c=color, s=size)
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
     
@@ -52,11 +53,15 @@ ax2 = plt.subplot(222)
 ax3 = plt.subplot(223)
 ax4 = plt.subplot(224)
 
-pltplt(ax1, 'Input data', x[0], x[1], '$x$', '$y$', 'b', 'r')
-pltplt(ax2, 'Spline', x[2], ans[0], '$z$', '$y$','g', 'r')
-pltplt(ax3, 'Linear', x[2], ans[1], '$z$', '$y$','y', 'b')
-pltplt(ax4, 'Lagrange', x[2], ans[2], '$z$', '$y$','r', 'b')
+pltplt(ax1, 'Input data (blue marker)', x[0], x[1], '$x$', '$y$', 'b', 55)
+pltplt(ax2, 'none', x[0], x[1], '$x$', '$y$', 'b', 55)
+pltplt(ax3, 'none', x[0], x[1], '$x$', '$y$', 'b', 55)
+pltplt(ax4, 'none', x[0], x[1], '$x$', '$y$', 'b', 55)
+pltplt(ax2, 'Spline (green marker)', x[2], ans[0], '$z$', '$y$','g', 40)
+pltplt(ax3, 'Linear (yellow marker)', x[2], ans[1], '$z$', '$y$','y',40)
+pltplt(ax4, 'Lagrange (red marker)', x[2], ans[2], '$z$', '$y$','r', 40)
 
 plt.subplots_adjust(wspace=0.35, hspace=0.35)
+plt.savefig("fig.jpg")
 plt.show()
 
