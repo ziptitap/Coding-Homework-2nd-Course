@@ -63,9 +63,9 @@ Solution:
 ----------------
 
 ### How To Run
-The heat equation:   ```python3 test.py```
+The heat equation:   ```python3 heat.py```
 
-The transport equation:     ```python3 test.py```
+The transport equation:     ```python3 transport.py```
 
 ----------------
 
