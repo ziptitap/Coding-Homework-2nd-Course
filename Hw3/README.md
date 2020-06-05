@@ -4,9 +4,9 @@
 
 Given 3 text files with numbers written in columns:
 
-        1. train.dat - values x0 < x1 <...< x_n;
-        2. train.ans - values y0 < y1 <...< y_n;
-        3. test.dat - values z0 < z1<...<zm.
+        1. train.dat - values x_0 < x_1 <...< x_n;
+        2. train.ans - values y_0 < y_1 <...< y_n;
+        3. test.dat - values z_0 < z_1<...<z_m.
 
 Required to build 3 different interpolation models *`y_{i} = f(x_{i})`* on *`(x_{i}, y_{i})`*:
 
