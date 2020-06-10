@@ -102,17 +102,17 @@ Example of running the program `test.py`:
 
 Graph for the Gaussian elimination:
 
- ![Graph for the Gaussian elimination](./Graphs/gauss_plot.jpg 'Gauss plot')
+ ![](./Graphs/gauss_plot.jpg 'Graph for the Gaussian elimination')
  
  
 Graph for the Cholesky decomposition:
 
- ![Graph for the Cholesky decomposition](./Graphs/cholesky_plot.jpg 'Gauss plot')
+ ![](./Graphs/cholesky_plot.jpg 'Graph for the Cholesky decomposition')
  
  
  Graph for the sweep algorithm:
  
- ![Graph for the sweep algorithm](./Graphs/sweep_plot.jpg 'Gauss plot')
+ ![](./Graphs/sweep_plot.jpg 'Graph for the sweep algorithm')
 
 ----------------
 
