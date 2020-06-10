@@ -128,4 +128,4 @@ At the end, 4 graphs are displayed:
         - red markers: points for lagrange interpolation.
 
 
-![Equation](./result.jpg)
+![Equation](./Graphs/result.jpg)
