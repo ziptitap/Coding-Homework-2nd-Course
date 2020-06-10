@@ -89,6 +89,6 @@ Example of running the program `test.py`:
 
 Plot:
 
- ![](result.jpg 'Gauss plot')
+ ![](./Graphs/result.jpg 'Gauss plot')
 
 ----------------
