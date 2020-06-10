@@ -89,7 +89,7 @@ Example of running the program `test.py`:
 
 Results and Graphs:
 
-     Method     |      Max n        |  Error       
+   Method       |      Max n        |  Error       
   ------------- | ----------------- |--------------
   Jacobi        | ~200-250 (< 1sec) |   3.17e-7
   Seidel        | ~2150 (< 0.1sec)  |   1.31e-7
