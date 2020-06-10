@@ -83,9 +83,9 @@ Output data:
 
   * GIF-file for transport equation:
   
-    ![Equation](./transfer1.gif)
+    ![Equation](./Gifs/transfer1.gif)
     
   * GIF-file for heat equation:
   
-    ![Equation](./heat1.gif)
+    ![Equation](./Gifs/heat1.gif)
 
