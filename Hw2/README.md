@@ -87,7 +87,7 @@ Example of running the program `test.py`:
 
  ![](../pics/ex2.png 'Example of running the program')
 
-Plot:
+Graphs:
 
  ![](./Graphs/result.jpg 'Gauss plot')
 
