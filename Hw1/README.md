@@ -90,26 +90,25 @@ After closing the graph, the menu reappears.
 Example of running the program `test.py`:
 
  ![](../pics/example.png 'Example of running the program')
- 
- Results of calculations:
- 
+
+
+ Results of calculations: 
    Method       |  Max n (< 1sec)   |  Error       
   ------------- | ----------------- |--------------
   Gauss         | ~600              |   1e-17
   Cholesky      | ~700              |   5.31e-9
   Sweep         | ~310000           |   4.88e-15
 
-Graph for the Gaussian elimination:
 
+Graph for the Gaussian elimination:
  ![](./Graphs/gauss_plot.jpg 'Gauss plot')
  
  
 Graph for the Cholesky decomposition:
-
  ![](./Graphs/cholesky_plot.jpg 'Gauss plot')
  
+ 
  Graph for the sweep algorithm:
-
  ![](./Graphs/sweep_plot.jpg 'Gauss plot')
 
 ----------------
