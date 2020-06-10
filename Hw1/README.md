@@ -99,15 +99,17 @@ Example of running the program `test.py`:
   Cholesky      | ~700              |   5.31e-9
   Sweep         | ~310000           |   4.88e-15
 
-----------------------------
+- - - - 
 Graph for the Gaussian elimination:
 
  ![](./Graphs/gauss_plot.jpg 'Graph for the Gaussian elimination')
----------------------------- 
+ 
+- - - - 
 Graph for the Cholesky decomposition:
 
  ![](./Graphs/cholesky_plot.jpg 'Graph for the Cholesky decomposition')
- ----------------------------
+ 
+- - - - 
  Graph for the sweep algorithm:
  
  ![](./Graphs/sweep_plot.jpg 'Graph for the sweep algorithm')
