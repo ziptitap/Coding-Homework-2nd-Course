@@ -87,7 +87,12 @@ Example of running the program `test.py`:
 
  ![](../pics/ex2.png 'Example of running the program')
 
-Graphs:
+Graphs and Result:
+
+  Method        | Max n            |  Error       
+  ------------- | ---------------- |--------------
+  Jacobi        | 200-250 (< 1sec) |   3.17e-7
+  Seidel        | 1400 (< 0.1sec)  |   1.31e-7
 
  ![](./Graphs/result.jpg 'Gauss plot')
 
