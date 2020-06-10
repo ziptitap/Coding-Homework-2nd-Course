@@ -61,19 +61,21 @@ l = len(time1)
 x = [y for y in range(n0,n+1,h)]        # vector of all matrix sizes
 ax1 = plt.subplot(211)
 ax2 = plt.subplot(212)
-ax1.plot(x,time1, label="My Jacob")      # graph for my calculations
-ax1.plot(x,time2,label="Numpy Jacob")    # graph for library function calculations
-ax1.plot(x,time11[:l], label="My Seidel")      # graph for my calculations
-ax1.plot(x,time22[:l],label="Numpy Seidel")    # graph for library function calculations
+ax1.plot(x,time1, label="My Jacob", c = 'b')      # graph for my calculations
+ax1.plot(x,time2,label="Numpy Jacob", c = 'r')    # graph for library function calculations
+ax1.plot(x,time11[:l], label="My Seidel", c = 'g')      # graph for my calculations
+ax1.plot(x,time22[:l],label="Numpy Seidel", c = 'black')    # graph for library function calculations
 ax1.set_xlabel("n")
 ax1.set_ylabel("time (sec)")
-ax1.legend(bbox_to_anchor=(0., 0., 1.0, 1.0), loc='center left', borderaxespad=0.)   
+ax1.legend(bbox_to_anchor=(0., 0., 1.0, 1.0), loc=0, borderaxespad=0.)   
 
-ax2.plot(x,time11[:l], label="My Seidel")      # graph for my calculations
-ax2.plot(x,time1, label="My Jacob")      # graph for my calculations
+ax2.plot(x,time2,label="Numpy Jacob",c = 'r')    # graph for library function calculations
+ax2.plot(x,time11[:l], label="My Seidel", c = 'g')      # graph for my calculations
+ax2.plot(x,time22[:l], label="Numpy Seidel",c = 'black')      # graph for my calculations
+
 ax2.set_xlabel("n")
 ax2.set_ylabel("time (sec)")
-ax2.legend(bbox_to_anchor=(0.5, 0., 0.5, 0.5), loc=0, borderaxespad=0.)   
+ax2.legend(bbox_to_anchor=(0., 0., 1.0, 1.0), loc=0, borderaxespad=0.)   
 plt.subplots_adjust(wspace=0.45, hspace=0.45)
 plt.savefig("fig.jpg")  
 plt.show()

@@ -7,7 +7,7 @@ import time
 def jacob(A, b):
     n = len(A)
     x_new = np.zeros(n)
-    eps = 0.000001          # accuracy of calculations
+    eps = 1e-5          # accuracy of calculations
     t = 1
     while t>eps:
         x = np.copy(x_new)
@@ -17,7 +17,7 @@ def jacob(A, b):
             
         # scalar product of the i-th row (all elements up to the i-th) 
         # of the matrix A and vector x (all elements to the i-th) 
-            s = np.dot(A[i, 0:i],x_new[:i])      
+            s = np.dot(A[i, 0:i],x[:i])      
             
         # scalar product of the i-th row (all elements of the (i + 1)-th) 
         # matrix A and vector x (all elements of the (i + 1)-th)   
