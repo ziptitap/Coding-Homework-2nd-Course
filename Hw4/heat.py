@@ -42,9 +42,9 @@ import matplotlib.animation as animation
 def animate(k):
     plt.clf()                               #clear figure
     plt.ylim(0,1)                           #y axis limits 
-    plt.title("time = %0.1f  (% d, % d)" %(tau*k, n,m))       
-    plt.plot(x, y[k], label = "Numerical")      #points of numerical solution                       
-    plt.plot(x, u[k], label = "Analytical")     #points of analytical solution
+    plt.title("time = %0.1f  (%d,%d)" %(tau*k, n,m))       
+    plt.plot(x, y[k],  label = "Numerical")      #points of numerical solution                       
+    plt.plot(x, u[k], '--',label = "Analytical")     #points of analytical solution
     plt.legend()
     
 ani = animation.FuncAnimation(plt.figure(0), animate, frames=y.shape[0], interval=100)
