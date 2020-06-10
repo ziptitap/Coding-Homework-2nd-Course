@@ -30,7 +30,7 @@ def pltplt(ax, title, x_data, y_data, xlabel, ylabel, color,size):
     
 x = [[],[],[]]; j = 0
 # read data from files
-for i in ['train.dat', 'train.ans', 'test.dat']:
+for i in ['./Data/train.dat', './Data/train.ans', './Data/test.dat']:
     read_file(i, x[j])
     j += 1
 
@@ -42,7 +42,7 @@ ans[2] = np.copy(lagrange_interpol(x[0], x[1], x[2]))       # lagrange interpola
 
 j=0
 # write results to file
-for i in ['test_spline.ans', 'test_linear.ans', 'test_lagrange.ans']:
+for i in ['./Data/test_spline.ans', './Data/test_linear.ans', './Data/test_lagrange.ans']:
     write_file(i, ans[j])
     j+=1
 
