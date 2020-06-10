@@ -91,9 +91,18 @@ Example of running the program `test.py`:
 
  ![](../pics/example.png 'Example of running the program')
 
-Plot:
+Graph for the Gaussian elimination:
 
- ![](gauss_plot.jpg 'Gauss plot')
+ ![](./Graphs/gauss_plot.jpg 'Gauss plot')
+ 
+ 
+Graph for the Cholesky decomposition:
+
+ ![](./Graphs/cholesky_plot.jpg 'Gauss plot')
+ 
+ Graph for the sweep algorithm:
+
+ ![](./Graphs/sweep_plot.jpg 'Gauss plot')
 
 ----------------
 
