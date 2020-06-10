@@ -105,27 +105,5 @@ Output data:
         test_spline.ans     - spline interpolation calculation results (for test.dat points)
 
 At the end, 4 graphs are displayed: 
-* **Upper left plot** - all interpolations:
-
-        - blue markers: input points;
-        - green markers: points for spline interpolation;
-        - yellow markers: points for linear interpolation;
-        - red markers: points for lagrange interpolation.
-        
-* **Upper right plot** - spline interpolation: 
-
-        - blue markers: input points;
-        - green markers: points for spline interpolation.
-
-* **Lower left plot** - linear interpolation: 
-
-        - blue markers: input points;
-        - yellow markers: points for linear interpolation.
-        
-* **Lower right plot** - lagrange interpolation: 
-
-        - blue markers: input points;
-        - red markers: points for lagrange interpolation.
-
 
 ![Equation](./Graphs/result.jpg)
