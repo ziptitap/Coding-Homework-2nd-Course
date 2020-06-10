@@ -87,7 +87,7 @@ Example of running the program `test.py`:
 
  ![](../pics/ex2.png 'Example of running the program')
 
-Graphs and Result:
+Results and Graphs:
 
   Method        | Max n            |  Error       
   ------------- | ---------------- |--------------
