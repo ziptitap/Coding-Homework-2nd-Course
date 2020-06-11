@@ -94,6 +94,6 @@ Results and Graphs:
   Jacobi        | ~200-250 (< 1sec) |   3.17e-7
   Seidel        | ~2150 (< 0.1sec)  |   1.31e-7
 
- ![](./Graphs/result.jpg 'Gauss plot')
+ ![](./Graphs/result.jpg 'Jacobi-Seidel plot')
 
 ----------------
