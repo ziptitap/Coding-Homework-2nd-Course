@@ -73,13 +73,13 @@ It follows that *`l_{j}(x_{j}) = y_{j}`*, so at each point *`x_{j}`*, *`L(x_{j})
   lagrange.py       | The program implements the lagrange interpolation.
   spline.py         | The program organizes the spline interpolation.
   test.py           | The program organizes the work of all programs.
-  train.dat         | Input data for *x* values.
-  train.ans         | Input data for *y* values.
-  test.dat          | Input data for *z* values.
-  test_spline.ans   | The result of spline interpolation for the set of values *z*.
-  test_linear.ans   | The result of linear interpolation for the set of values *z*.
-  test_lagrange.ans | The result of lagrange interpolation for the set of values *z*.
-  result.jpg        | The plot with input points and output poits of each interpolation method.
+  train.dat         | **Data** folder. Input data for *x* values.
+  train.ans         | **Data** folder. Input data for *y* values.
+  test.dat          | **Data** folder. Input data for *z* values.
+  test_spline.ans   | **Data** folder. The result of spline interpolation for the set of values *z*.
+  test_linear.ans   | **Data** folder. The result of linear interpolation for the set of values *z*.
+  test_lagrange.ans | **Data** folder. The result of lagrange interpolation for the set of values *z*.
+  result.jpg        | **Data** folder. The plot with input points and output poits of each interpolation method.
   
 ----------------
 
