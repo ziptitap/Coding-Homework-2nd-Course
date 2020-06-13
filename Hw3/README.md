@@ -79,7 +79,7 @@ It follows that *`l_{j}(x_{j}) = y_{j}`*, so at each point *`x_{j}`*, *`L(x_{j})
   test_spline.ans   | **Data** folder. The result of spline interpolation for the set of values *z*.
   test_linear.ans   | **Data** folder. The result of linear interpolation for the set of values *z*.
   test_lagrange.ans | **Data** folder. The result of lagrange interpolation for the set of values *z*.
-  result.jpg        | **Graph** folder. The plot with input points and output poits of each interpolation method.
+  result.jpg        | **Graphs** folder. The plot with input points and output poits of each interpolation method.
   
 ----------------
 
